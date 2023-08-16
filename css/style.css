@@ -1,0 +1,648 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+/* 
+      MAIN COLOR: #fd7e14
+      GREY COLOR: #343a40
+      */
+
+/* ********************** */
+/* NAVIGATION */
+/* ********************** */
+
+.header {
+  background-color: #fff4e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.8rem;
+  height: 8rem;
+
+  position: relative;
+}
+
+.space-logo {
+  height: 8rem;
+  padding-top: 2.4rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 4.8rem;
+  list-style-type: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  align-items: center;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #f76707;
+}
+
+.nav-link.nav-cta:link,
+.nav-link.nav-cta:visited {
+  background-color: #fd7e14;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 8px;
+}
+
+.nav-link.nav-cta:hover,
+.nav-link.nav-cta:active {
+  background-color: #f76707;
+}
+
+/* ********************** */
+/* MOBILE NAV */
+/* ********************** */
+
+.btn-mobile-nav {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* ********************** */
+/* HERO SECTION */
+/* ********************** */
+
+.section-hero {
+  background-color: #fff4e6;
+  padding: 4.8rem 0 9.6rem;
+  line-height: 1.6;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 2.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.primary-header {
+  font-size: 5.2rem;
+  margin-bottom: 3.2rem;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  columns: #666;
+  margin-bottom: 4.8rem;
+  line-height: 1.6;
+}
+
+.hero-img-box {
+  display: flex;
+
+  margin-top: 8rem;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 1.6rem;
+  /* margin-left: 9.6rem; */
+}
+
+.customers-img {
+  display: flex;
+}
+
+.customers-img img {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-right: -1.6rem;
+  border-radius: 50%;
+  border: solid 3px #fff4e6;
+}
+
+.customers-img img:last-child {
+  margin-right: 0rem;
+}
+
+.hero-delivered {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.hero-delivered span {
+  color: #f76707;
+  font-weight: 700;
+}
+
+/* ********************** */
+/* HOW IT WORKS SECTION */
+/* ********************** */
+
+.img-step-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.img-step-box::before {
+  content: "";
+  display: block;
+  width: 60%;
+  padding-bottom: 60%;
+  /* height: 60%; */
+  background-color: #fff4e6;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -2;
+}
+
+.img-step-box::after {
+  content: "";
+  display: block;
+  width: 45%;
+  padding-bottom: 45%;
+  /* height: 60%; */
+  background-color: #ffe8cc;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -1;
+}
+
+.img-phone {
+  width: 35%;
+  padding: 0 auto;
+}
+
+.number {
+  font-size: 7.4rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.6rem;
+}
+
+.text-how {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.section-featured {
+  margin-top: 4.8rem;
+}
+
+.featured-heading {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.logos-box {
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+  margin-bottom: 9.8rem;
+}
+
+.logos-box img {
+  display: inline-block;
+  height: 3rem;
+  filter: brightness(0);
+  opacity: 50%;
+  margin-bottom: 4.8rem;
+}
+
+.section-meal {
+  padding: 0.8rem 0 9.6rem;
+  margin-bottom: 3.6rem;
+}
+
+.meal-card {
+  box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.meal-card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 2.4rem 4rem rgba(0, 0, 0, 0.07);
+}
+
+.meal-content {
+  padding: 3rem 3.2rem 5.2rem 3.2rem;
+  color: #555;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  color: #f76707;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.meal-card-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.tag {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  margin-right: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 100px;
+  padding: 0.4rem 0.8rem;
+  color: #333;
+}
+
+.list-meal {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.tag-vegan {
+  background-color: #94d82d;
+}
+
+.tag-paleo {
+  background-color: #ffd43b;
+}
+
+.tag-vegeterian {
+  background-color: #51cf66;
+}
+
+.recipe-link:link,
+.recipe-link:visited {
+  display: inline-block;
+  color: #f76707;
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-bottom: solid 1px #f76707;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.recipe-link:hover,
+.recipe-link:active {
+  color: #fd7e14;
+  border-bottom: solid 1px transparent;
+}
+
+.recipe-box {
+  max-width: 120rem;
+  margin: 0rem auto;
+  padding: 0 2.8rem;
+}
+
+.section-testimonial {
+  background-color: #fff4e6;
+  margin-bottom: 12.8rem;
+}
+
+.author-img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+}
+
+.grid-testimonial {
+  grid-template-columns: 55fr 45fr;
+  margin-bottom: 9.6rem;
+  align-items: center;
+}
+
+.spacing {
+  padding: 4.8rem 0 2.8rem 4.8rem;
+  margin-left: 4.8rem;
+}
+
+.testimonials-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 4.8rem;
+  align-items: center;
+}
+
+.blockquote {
+  line-height: 1.8;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.author {
+  color: #666;
+  font-size: 1.8rem;
+}
+
+.testimonail-img {
+  display: block;
+  /* height: 6.4rem; */
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.testimonail-img:hover {
+  transform: scale(1.1);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.6rem;
+  row-gap: 1.6rem;
+  padding: 1.6rem 1.6rem 1.6rem 0;
+  align-items: center;
+}
+
+.figure-gallery {
+  overflow: hidden;
+}
+
+.footer-contact {
+  color: #444;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.section-pricing {
+  display: grid;
+  justify-content: center;
+  column-gap: 5.2rem;
+}
+
+.pricing-plan {
+  padding: 4.8rem 4.8rem;
+  border-radius: 1.2rem;
+  width: 75%;
+}
+
+.pricing-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f76707;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+  padding: 2.4rem auto;
+}
+
+.pricing-list {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-bottom: 4.8rem;
+  list-style: none;
+}
+
+.pricing-list li {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.price {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.price span {
+  font-size: 2.4rem;
+}
+
+.price-description {
+  font-size: 1.6rem;
+  color: #555;
+  margin-bottom: 4.8rem;
+}
+
+.starter {
+  border: solid 2px #fff4e6;
+  justify-self: end;
+}
+
+.complete {
+  background-color: #fff4e6;
+  position: relative;
+  overflow: hidden;
+}
+
+.complete::after {
+  content: "Best value";
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #ffcd18;
+  padding: 1rem 5.6rem;
+
+  position: absolute;
+  top: 6%;
+  right: -12%;
+  transform: rotate(45deg);
+}
+
+.pricing-btn {
+  text-align: center;
+}
+
+.prices-text {
+  font-size: 1.6rem;
+  margin: 6.4rem auto 7.2rem auto;
+  text-align: center;
+}
+
+.features {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature-el {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.feature-icon {
+  background-color: #ffe8cc;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 1.8rem;
+}
+
+.feature-heading {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.feature-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.section-cta {
+  padding: 3.2rem 0 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 1.2rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(243, 152, 91),
+    rgb(199, 97, 14)
+  );
+  overflow: hidden;
+
+  /* background-color: #f76707; */
+}
+
+.cta-imgbox {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(252, 153, 47, 0.4),
+      rgba(216, 111, 25, 0.4)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-textbox {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #331804;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.6rem;
+  margin-bottom: 4.8rem;
+  line-height: 1.5;
+  color: #331804;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  background-color: #ffe8cc;
+  border-radius: 0.8rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: #331804;
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  color: #331804;
+}
+
+.btn-form {
+  background-color: #331804;
+  color: #ffe8cc;
+  border: none;
+  cursor: pointer;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(255, 244, 230, 0.5);
+}
